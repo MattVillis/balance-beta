@@ -1,0 +1,77 @@
+name: Share a capture
+description: Send a picture of a colour chart from your camera, to test and improve ChartBalance.
+title: "Capture: "
+labels: ["capture"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sending a capture. In ChartBalance, **Share this capture** (on the Save step, or in Details → Settings) saves a zip and fills in most of this form. **Drag that zip into the "Capture zip" box below**, check the details and submit.
+
+        Everything here is public. Real cameras and capture cards are what the next versions of ChartBalance are tested and tuned on.
+  - type: input
+    id: camera
+    attributes:
+      label: Camera
+      description: Make and model.
+      placeholder: e.g. Sony FX6, Blackmagic URSA Broadcast G2, Logitech C920
+    validations:
+      required: true
+  - type: input
+    id: settings
+    attributes:
+      label: Camera settings
+      description: Picture profile or gamma, colour space, white balance, ISO or gain, any look or LUT.
+      placeholder: e.g. Rec.709 picture profile, 5600 K, ISO 800, no LUT
+  - type: input
+    id: lens
+    attributes:
+      label: Lens
+  - type: input
+    id: capture_device
+    attributes:
+      label: Capture device
+      description: And how it's connected.
+      placeholder: e.g. Elgato Cam Link 4K over HDMI, Blackmagic DeckLink over SDI, USB webcam
+  - type: input
+    id: format
+    attributes:
+      label: Format
+      description: Filled in by ChartBalance (resolution, frame rate, pixel format, bit depth, levels).
+  - type: input
+    id: chart
+    attributes:
+      label: Chart
+      description: Filled in by ChartBalance. If it found the wrong chart, write the right one here.
+    validations:
+      required: true
+  - type: input
+    id: light
+    attributes:
+      label: Light
+      placeholder: e.g. LED panel at 5600 K, daylight from a window
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Anything that went wrong or looked odd.
+  - type: textarea
+    id: details
+    attributes:
+      label: ChartBalance details
+      description: Filled in by ChartBalance.
+      render: text
+  - type: textarea
+    id: files
+    attributes:
+      label: Capture zip
+      description: Drag the zip ChartBalance saved into this box (up to 25 MB). Bigger? Email it instead.
+    validations:
+      required: true
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Permission
+      options:
+        - label: I took this picture and agree it can be used and shown publicly to test and improve ChartBalance.
+          required: true
