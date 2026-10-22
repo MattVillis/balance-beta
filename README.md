@@ -21,6 +21,23 @@ This repository holds the **beta builds** for testers.
 ChartBalance checks this page for a newer beta once a day and offers it with an *Update*
 button at the top of the window.
 
+## Share a capture
+
+Real cameras and capture cards are what ChartBalance is tested and tuned on, so pictures
+of a chart from your setup help a lot, especially when something looks wrong.
+
+- **From the next beta:** click *Share this capture* (on the Save step, or in
+  *Details → Settings*). It saves a zip with the picture, your camera and settings, the
+  capture format and what ChartBalance read, shows it in Explorer and opens the
+  [capture form](https://github.com/MattVillis/chartbalance-beta/issues/new?template=capture.yml)
+  with most of it filled in. Drag the zip into the form and submit.
+- **Until then:** open the [capture form](https://github.com/MattVillis/chartbalance-beta/issues/new?template=capture.yml),
+  fill it in and attach a still of the chart as it came from the camera or capture card
+  (a PNG, not a screenshot of the app).
+
+You need a free GitHub account, and everything in the form is public. No account, or a
+file over 25 MB? Email it to **matt@frequency.ee** instead.
+
 ## Feedback
 
 Email **matt@frequency.ee** with what you did, what you expected and what happened, which
