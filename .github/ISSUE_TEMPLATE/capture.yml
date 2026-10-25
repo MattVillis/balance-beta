@@ -1,14 +1,14 @@
 name: Share a capture
-description: Send a picture of a colour chart from your camera, to test and improve ChartBalance.
+description: Send a picture of a colour chart from your camera, to test and improve Balance.
 title: "Capture: "
 labels: ["capture"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for sending a capture. In ChartBalance, **Share this capture** (on the Save step, or in Details → Settings) saves a zip and fills in most of this form. **Drag that zip into the "Capture zip" box below**, check the details and submit.
+        Thanks for sending a capture. In Balance, **Share this capture** (on the Save step, or in Details → Settings) saves a zip and fills in most of this form. **Drag that zip into the "Capture zip" box below**, check the details and submit.
 
-        Everything here is public. Real cameras and capture cards are what the next versions of ChartBalance are tested and tuned on.
+        Everything here is public. Real cameras and capture cards are what the next versions of Balance are tested and tuned on.
   - type: input
     id: camera
     attributes:
@@ -37,12 +37,12 @@ body:
     id: format
     attributes:
       label: Format
-      description: Filled in by ChartBalance (resolution, frame rate, pixel format, bit depth, levels).
+      description: Filled in by Balance (resolution, frame rate, pixel format, bit depth, levels).
   - type: input
     id: chart
     attributes:
       label: Chart
-      description: Filled in by ChartBalance. If it found the wrong chart, write the right one here.
+      description: Filled in by Balance. If it found the wrong chart, write the right one here.
     validations:
       required: true
   - type: input
@@ -58,14 +58,14 @@ body:
   - type: textarea
     id: details
     attributes:
-      label: ChartBalance details
-      description: Filled in by ChartBalance.
+      label: Balance details
+      description: Filled in by Balance.
       render: text
   - type: textarea
     id: files
     attributes:
       label: Capture zip
-      description: Drag the zip ChartBalance saved into this box (up to 25 MB). Bigger? Email it instead.
+      description: Drag the zip Balance saved into this box (up to 25 MB). Bigger? Email it instead.
     validations:
       required: true
   - type: checkboxes
@@ -73,5 +73,5 @@ body:
     attributes:
       label: Permission
       options:
-        - label: I took this picture and agree it can be used and shown publicly to test and improve ChartBalance.
+        - label: I took this picture and agree it can be used and shown publicly to test and improve Balance.
           required: true
