@@ -6,6 +6,13 @@ greys come out neutral. It also checks exposure. It finds and recognises the cha
 itself: Calibrite / X-Rite ColorChecker (Video, Passport, Classic, Digital SG and more),
 Datacolor SpyderCheckr, and DSC Labs ChromaDuMonde and OneShot.
 
+Then it lines up the colours, live, the way a shader does on a paint panel: the camera's
+user matrix term by term, then its multi-matrix axis by axis, against the chart's
+reference colours or another camera's reading of the same chart. Each control's block
+turns green when it's right. It can also export the correction as an ASC CDL or a LUT,
+and set some cameras itself over the network (Blackmagic, Panasonic AW, Z CAM, and PTZ
+cameras over VISCA; tested against simulated cameras so far, so try it off air).
+
 This repository holds the **beta builds** for testers. (Balance was called ChartBalance up
 to 0.9 beta 3; this repository was chartbalance-beta, and the old links still work.)
 
@@ -31,7 +38,9 @@ of a chart from your setup help a lot, especially when something looks wrong.
   *Details → Settings*). It saves a zip with the picture, your camera and settings, the
   capture format and what Balance read, shows it in Explorer and opens the
   [capture form](https://github.com/MattVillis/balance-beta/issues/new?template=capture.yml)
-  with most of it filled in. Drag the zip into the form and submit.
+  with most of it filled in. Drag the zip into the form and submit. If you can, add the
+  camera's colour bars and a frame with the lens cap on (buttons in the same window), and
+  the camera's firmware: they show how your capture reads levels, colours and black.
 - **Or by hand:** open the [capture form](https://github.com/MattVillis/balance-beta/issues/new?template=capture.yml),
   fill it in and attach a still of the chart as it came from the camera or capture card
   (a PNG, not a screenshot of the app).
